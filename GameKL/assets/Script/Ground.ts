@@ -29,5 +29,6 @@ export default class NewClass extends cc.Component {
 
      update (dt) {
          this.node.x += this.speed;
+         this.node.y = this.node.x /2;
      }
 }
