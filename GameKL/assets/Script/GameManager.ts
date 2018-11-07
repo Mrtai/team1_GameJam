@@ -27,12 +27,14 @@ export default class NewClass extends cc.Component {
     }
 
     start () {
+        var x= this.icon.getLocalZOrder();
+        cc.log(x);
 
     }
 
      update (dt) {
          this.time += dt;
          this.label.string = Math.floor(this.time).toString();
-       
+        
      }
 }
