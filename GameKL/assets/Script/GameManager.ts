@@ -16,12 +16,13 @@ export default class NewClass extends cc.Component {
     @property(cc.Label)
     label: cc.Label = null;
 
-    @property
-    text: string = 'hello';
+    @property(cc.Node)
+    icon: cc.Node = null;
 
+    time: number;
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {}
+    onLoad () {}
 
     start () {
 
