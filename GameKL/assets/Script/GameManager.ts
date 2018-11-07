@@ -22,11 +22,16 @@ export default class NewClass extends cc.Component {
     time: number;
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {}
+    onLoad () {
+        this.time = 0;
+    }
 
     start () {
 
     }
 
-    // update (dt) {}
+     update (dt) {
+         this.time += dt;
+         this.label.string = Math.floor(this.time).toString();
+     }
 }
