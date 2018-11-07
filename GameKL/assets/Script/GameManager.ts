@@ -33,6 +33,6 @@ export default class NewClass extends cc.Component {
      update (dt) {
          this.time += dt;
          this.label.string = Math.floor(this.time).toString();
-         //Lên ko
+         
      }
 }
